@@ -10,7 +10,7 @@ if (process.argv.length !== 4) {
 }
 
 const saveUser = (user) => {
-  fs.writeFileSync(PATH, JSON.stringify([...users, user], null, 2));
+  fs.writeFileSync(PATH, JSON.stringify([user, ...users], null, 2));
 };
 
 saveUser(crypto.createUser(process.argv[2], process.argv[3]));

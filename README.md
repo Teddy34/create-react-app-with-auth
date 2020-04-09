@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### User generation
+In the root repository folder, type
+```
+node ./tools/generate_user.js <login> <password>
+```
+
+Adding several times user with the same login will overide the previous user but not lose the hash information so it's possible to rollback (we always check the first user with that login in the assets/users.json array)
