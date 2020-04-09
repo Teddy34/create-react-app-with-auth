@@ -1,0 +1,8 @@
+[
+  {
+    "login": "admin",
+    "salt": "rUeImc7iA8HVMHNWLH/ATaamQyqGlYMrVma4WrPCBl/mgKqz87x7Tcv6VFNVVDdkoJJGZY1rriBvpB/+5n8a81X2DNejEIv8h9GHx6aIaPbUaONnl5BjKCvG2S04TYbB/s7Fv+PB2ku/qNZR9kDnyL8ODmv3+rtbdr/dWqMPvic=",
+    "hash": "683c92e4a757dd54d7f09fc737f86a9d252413e0236f2143a3f13b23426c6cae9c90484998939de5504161f44d95c467b6b335a2056b02c09621f6a8b7cfaa66",
+    "iterations": 10000
+  }
+]
