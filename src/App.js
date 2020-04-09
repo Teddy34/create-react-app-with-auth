@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const [message, setMessage] = useState('nothing yet');
   useEffect(() => {
     fetch("/api/hello")
       .then((response) => response.json())
-      .then((hello) => console.log(hello))
+      .then(setMessage)
       .catch((err) => console.error('### Error:', err));
   }, []);
   return (
@@ -14,7 +15,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {message.express}
         </p>
         <a
           className="App-link"
